@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-sp
+  labels:
+    role: app
+spec:
+  selector:
+    matchLabels:
+      role: app
+  template:
+    metadata:
+      labels:
+        role: app
+    spec:
+      containers:
+        - name: shibboleth-sp
+          image: shibboleth-sp
+          volumeMounts:
+            - mountPath: /var/run/shibboleth
+              name: shib-socket
+            - mountPath: /etc/shibboleth/shibboleth2.xml
+              name: shibboleth2-xml
+              subPath: shibboleth2.xml
+            - mountPath: /etc/shibboleth/attribute-map.xml
+              name: attribute-map-xml
+              subPath: attribute-map.xml
+            - mountPath: /etc/shibboleth/attribute-policy.xml
+              name: attribute-policy-xml
+              subPath: attribute-policy.xml
+        - name: httpd
+          image: httpd
+          volumeMounts:
+            - mountPath: /var/run/shibboleth
+              name: shib-socket
+            - mountPath: /etc/shibboleth/shibboleth2.xml
+              name: shibboleth2-xml
+              subPath: shibboleth2.xml
+        - name: tomcat
+          image: tomcat
+      volumes:
+        - name: shib-socket
+          emptyDir: {}
+        - name: shibboleth2-xml
+          configMap:
+            name: shib-config
+        - name: attribute-map-xml
+          configMap:
+            name: shib-config
+        - name: attribute-policy-xml
+          configMap:
+            name: shib-config

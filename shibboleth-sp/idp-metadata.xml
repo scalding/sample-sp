@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor entityID="http://www.okta.com/exk4i7ulg1MdpxQ3J357" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"><md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIDnDCCAoSgAwIBAgIGAWsQDEVbMA0GCSqGSIb3DQEBCwUAMIGOMQswCQYDVQQGEwJVUzETMBEG
+A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU
+MBIGA1UECwwLU1NPUHJvdmlkZXIxDzANBgNVBAMMBnVuaWNvbjEcMBoGCSqGSIb3DQEJARYNaW5m
+b0Bva3RhLmNvbTAeFw0xOTA1MzEyMjM4MjhaFw0yOTA1MzEyMjM5MjhaMIGOMQswCQYDVQQGEwJV
+UzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwE
+T2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxDzANBgNVBAMMBnVuaWNvbjEcMBoGCSqGSIb3DQEJ
+ARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI4wgckIT722
+g1h3IFyxQY84CTliSDUmDA04OHya0p/5FnAConfoWyHIgRmjjYnQ9hS2QBwJ8Yevo1SgM1orPMa8
+tM7NO9c61HBZPdNAsHqS2ZeJEyUw34P9+spPSZQugqk2iGUTQeVXiIEE9zoV43gelenYGiRyLobJ
+LKjkHtbgqezfyw1rgmSr2hgyGBdTpOJ+GROGCw1lqgbotSup/NyB8jtnwBpTa4Ad9aObRxcUS29U
+4wZjX7IRvC59WJXbN8GjV+51yQGc70+AQi9gfzCVnm/PB2143iAF/U6xK+qxzm0hmb9szTprkbS1
+LWy9ct+ku/hxEQ/suZoI3BxcuMUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAhJF/geopqhyzoOQE
+e2RQrRwvmXlLR7pH6xpKLV36/cuOieA4Kic6i/HQOTKb8+TKp4DDr3ySz6PON/H8ByMaWZ4Z5RZe
+CHTUg/GXjd3YrVwM/b4DbIBe2WH0jkf+O1opitU08urN5HVijpVBr0gkTQhDqc/DUht0a2h95s/J
+1F+3uO4Syi0Q5g/6ATHtfvWir6K/mWpqh0J88m6AHA9YjPkL9mpeUQ7kqLpd0CraocrD+g2tVqXw
+MhFm0xxFialiS8LpPNDSon8F1SetzQe3l/WHUe51DHdqkQwvpLTgvpkUQ9Ip52bAhcWY95IPei3c
+Eh29z4v+5oaGkQhYBfo+lw==</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat><md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://unicon.okta.com/app/unicon_samplescaldingspooncom_1/exk4i7ulg1MdpxQ3J357/sso/saml"/><md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://unicon.okta.com/app/unicon_samplescaldingspooncom_1/exk4i7ulg1MdpxQ3J357/sso/saml"/></md:IDPSSODescriptor></md:EntityDescriptor>
